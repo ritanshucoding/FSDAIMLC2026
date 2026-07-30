@@ -1,17 +1,7 @@
-function login(msg,error){
-    if(error){
-        console.log("error is:"+error)
-    }
-    else{
-        console.log("welcome:"+msg);
-    }
+const  student={
+    name:"Ritanshu",
+    age:21,
+    branch:"CSE"
 }
-function loginverification(username,password,clbk){
-    if(username=="axyt28" && password=="654321"){
-        clbk("success",null);
-    }
-    else{
-        clbk(null,"username or password is incorrect")
-    }
-}
-loginverification("axyt28","654321",login)
+const name = student.name;
+console.log(name);

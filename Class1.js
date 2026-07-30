@@ -1,17 +1,9 @@
-function login(msg,error){
-    if(error){
-        console.log("error is:"+error)
-    }
-    else{
-        console.log("welcome:"+msg);
-    }
-}
-function loginverification(username,password,clbk){
-    if(username=="axyt28" && password=="654321"){
-        clbk("success",null);
-    }
-    else{
-        clbk(null,"username or password is incorrect")
-    }
-}
-loginverification("axyt28","654321",login)
+const num=[1,2,3,4,5,6,7,8,9,10];
+const evenNum=num.filter((n)=>n%2==0);
+console.log("Even Numbers are:",evenNum);
+
+const oddNum=num.filter((n)=>n%2!=0);
+console.log("Odd Numbers are:",oddNum);
+
+const squareNum=num.map((n)=>n*n);
+console.log("Square of Numbers are:",squareNum)
